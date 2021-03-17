@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+html,body{
+  margin:0;
+  height:120%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 *{
     box-sizing: border-box;
-    font-family: Helvetica;
 }
 
 body {
@@ -16,9 +23,12 @@ body {
 }
   
 .h1 {
-    font-size: 50px;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #00adb5;
+    font-size: 40px;
     word-break: break-all;
     text-align: center;
+    padding: 10px;
 }
   
 .row {
@@ -75,6 +85,7 @@ body {
     width: 150px;
     object-fit:cover;
     border-radius:50%;
+    border: 5px solid #eeeeee;
 }
 
 .section-atas{
@@ -92,12 +103,31 @@ body {
     text-align: start;
     justify-content: start;
 }
+.h2{
+    font-family: 'Open Sans';
+    text-align: center;
+    background-color: #00adb5;
+    padding: 5px;
+    color: #222831;
+}
 
+.site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
 
 /* tampilan tablet antara 768pc sampai 992px*/
 @media(min-width: 768px) and (max-width: 992px){
     .section-atas{
         text-align: center;
+    }
+
+    .site-footer{
+        padding-bottom:0
+    }
+    .site-footer
+    {
+        text-align:center
     }
 }
 
@@ -118,13 +148,50 @@ body {
     list-style: circle;
 }
 
-.footer{
-    width: 100%;
-    height: 50px;
-    padding-left: 10px;
-    line-height: 50px;
-    background: #00adb5;
-    color: #222831;
-    text-align: center;
-    font-size: small;
+
+
+/* --------------------------------------------- */
+.site-footer
+{
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+  text-align: center;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+}
+.copyright-text
+{
+  margin:0
 }
